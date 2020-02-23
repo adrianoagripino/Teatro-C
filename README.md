@@ -1,5 +1,5 @@
 # Teatro-C
-Projeto Integrado Multidisciplinar UNIP - Sistema em linguagem C para venda de ingressos de teatro.
+> Projeto Integrado Multidisciplinar UNIP - Sistema em linguagem C para venda de ingressos de teatro.
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/adrianoagripino/Teatro-C)
 ![GitHub contributors](https://img.shields.io/github/contributors/adrianoagripino/Teatro-C)
