@@ -3,7 +3,6 @@
 * Copyright (c) 2020 Adriano Bezerra 
 *
 **/
-
 #include <stdio.h>
 #include <stdlib.h>  
 #include <locale.h>  
@@ -175,7 +174,7 @@ int main(int argc, char *argv[])
 		if((codigo_peca>4)&&(codigo_dia!=2))
 			{
 			printf("\n|-----------------------------------------------|\n"); 
-			printf("| C�DIGO N�O ENCONTRADO NA LISTA DE ESPET�CULOS |\n"); 
+			printf("| CÓDIGO NÃO ENCONTRADO NA LISTA DE ESPETÁCULOS |\n"); 
 			printf("|-----------------------------------------------|\n"); 
 			sleep(5); 
 			system("cls"); 
@@ -187,7 +186,7 @@ int main(int argc, char *argv[])
 			system("cls");
 		 	printf("\n|----------------------------|\n");
 			printf("| INGRESSOS ESGOTADOS        |\n"); 
-			printf("| SELECIONE OUTRO ESPET�CULO |\n"); 
+			printf("| SELECIONE OUTRO ESPETÁCULO |\n"); 
 			printf("|----------------------------|\n"); 
 			sleep(5); 
 			system("cls"); 
@@ -275,14 +274,14 @@ int main(int argc, char *argv[])
 			printf("|---------------------------------------------------------------------|\n"); 
 			printf("|                  * OCUPADO | - VAGO | + SELECIONADO                 |\n"); 
 			printf("|---------------------------------------------------------------------|\n"); 
-			printf(" ESCOLHA O N�MERO DA POLTRONA DESEJADA: "); 
+			printf(" ESCOLHA O NÚMERO DA POLTRONA DESEJADA: "); 
 			scanf("%d", &numero_poltrona); 
 		
 			if((numero_poltrona>30)||(numero_poltrona<1))
 				{
 				system("cls");
 				printf("\n|-----------------------------------------|\n"); 
-				printf("| ESCOLHA UM N�MERO DE POLTRONA EXISTENTE |\n"); 
+				printf("| ESCOLHA UM NÚMERO DE POLTRONA EXISTENTE |\n"); 
 				printf("|-----------------------------------------|\n"); 
 				sleep(5);
 				system("cls");
@@ -310,7 +309,7 @@ int main(int argc, char *argv[])
 				{
 				system("cls"); 
 				printf("\n|----------------------|\n"); 
-				printf("| LUGAR J� SELECIONADO |\n"); 
+				printf("| LUGAR JÁ SELECIONADO |\n"); 
 				printf("|----------------------|\n"); 
 				sleep(2);
 				system("cls"); 
@@ -321,10 +320,10 @@ int main(int argc, char *argv[])
 			system("cls");
 		} 
 	
-		// confirma��o da compra 
+		// confirmação da compra 
 		preco_compra = entrada_inteira*valorx + entrada_meia*meiax; 
 		printf("|----------------------------------------------------|\n"); 
-		printf("|DESEJA CONCLUIR A COMPRA? (1 PARA SIM | 0 PARA N�O) |\n"); 
+		printf("|DESEJA CONCLUIR A COMPRA? (1 PARA SIM | 0 PARA NÃO) |\n"); 
 		printf("|TOTAL DA COMPRA: R$%d,00                            |\n", preco_compra); 
 		printf("|----------------------------------------------------|\n\n"); 
 		scanf("%d", &confirma); 
@@ -341,7 +340,7 @@ int main(int argc, char *argv[])
 		} 
 		system("cls"); 
 
-		// impress�o dos tickets baseado na soma dos ingressos 
+		// impressão dos tickets baseado na soma dos ingressos 
 		for(k= 0; k<soma_entrada; k++)
 			{
 			// parte fixa do ticket
@@ -353,23 +352,23 @@ int main(int argc, char *argv[])
 			switch(codigo_peca)
 				{
 				case 1:
-				printf("| PE�A: A BELA E A FERA                   SALA: 1           |\n"); 
-				printf("| SESS�O: 13:00                           POLTRONA: %0.2d      |\n", ticket_poltrona[k][0]);
+				printf("| PEÇA: A BELA E A FERA                   SALA: 1           |\n"); 
+				printf("| SESSÃO: 13:00                           POLTRONA: %0.2d      |\n", ticket_poltrona[k][0]);
 				break;
 		
 				case 2:
-				printf("| PE�A: COMEDIANTE, CASADO E PAI          SALA: 1           |\n"); 
-				printf("| SESS�O: 16:30                           POLTRONA: %0.2d      |\n", ticket_poltrona[k][0]); 
+				printf("| PEÇA: COMEDIANTE, CASADO E PAI          SALA: 1           |\n"); 
+				printf("| SESSÃO: 16:30                           POLTRONA: %0.2d      |\n", ticket_poltrona[k][0]); 
 				break;
 		
 				case 3:
-				printf("| PE�A: N�IS QUE � POBRE                  SALA: 2           |\n"); 
-				printf("| SESS�O: 11:30                           POLTRONA: %0.2d      |\n", ticket_poltrona[k][0]);
+				printf("| PEÇA: NÓIS QUE É POBRE                  SALA: 2           |\n"); 
+				printf("| SESSÃO: 11:30                           POLTRONA: %0.2d      |\n", ticket_poltrona[k][0]);
 				break;
 		
 				case 4:
-				printf("| PE�A: O FANTASMA DA �PERA               SALA:2            |\n");
-				printf("| SESS�O: 15:30                           POLTRONA: %0.2d      |\n", ticket_poltrona[k][0]); 
+				printf("| PEÇA: O FANTASMA DA �PERA               SALA:2            |\n");
+				printf("| SESSÃO: 15:30                           POLTRONA: %0.2d      |\n", ticket_poltrona[k][0]); 
 				break; 
 		
 				case 5: 
